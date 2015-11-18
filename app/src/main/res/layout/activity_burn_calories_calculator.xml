@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:fitsSystemWindows="true"
+    android:stretchColumns="0,1,2,3"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:text="Burned Calories Calculator"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/weightLabel"
+            android:text="@string/WeightLabel"
+            android:layout_span="1"
+            />
+        <EditText
+            android:id="@+id/weightET"
+            android:text="@string/weighET"
+            android:layout_span="3"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/milesLabel"
+            android:text="@string/MilesRanLabel"
+            android:layout_span="1"
+            />
+        <TextView
+            android:id="@+id/milesTV"
+            android:text="@string/Miles"
+            android:layout_span="1"
+            />
+        <SeekBar
+            android:id="@+id/milesSeekbar"
+            android:layout_span="2"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="1"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/caloriesBurnedLabel"
+            android:text="@string/CalBurnedLabel"
+            android:layout_span="2"
+            />
+        <TextView
+            android:id="@+id/caloriesBurnedTV"
+            android:text="@string/Calories"
+            android:layout_span="2"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/heightLabel"
+            android:text="@string/Height"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <LinearLayout android:orientation="horizontal">
+            <Spinner
+            android:id="@+id/feetSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+            <Spinner
+                android:id="@+id/inchesSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/BMILabel"
+            android:text="@string/BMI"
+            android:layout_span="2"
+            />
+        <TextView
+            android:id="@+id/bmiTV"
+            android:text="@string/bmi"
+            android:layout_span="2"
+            />
+    </TableRow>
+
+    <TableRow></TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/nameLabel"
+            android:text="@string/name"
+            android:layout_span="2"
+            />
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_span="2"
+            />
+    </TableRow>
+
+</TableLayout>

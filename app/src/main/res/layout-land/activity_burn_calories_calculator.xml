@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:fitsSystemWindows="true"
+    android:stretchColumns="0,1,2,3,4"
+    >
+
+    <TableRow>
+        <TextView
+            android:id="@+id/weightLabel"
+            android:text="@string/WeightLabel"
+            android:layout_span="1"
+            />
+        <EditText
+            android:id="@+id/weightET"
+            android:text="@string/weighET"
+            android:layout_span="3"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/milesLabel"
+            android:text="@string/MilesRanLabel"
+
+            />
+        <TextView
+            android:id="@+id/milesTV"
+            android:text="@string/Miles"
+            />
+        <SeekBar
+            android:id="@+id/milesSeekbar"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="1"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/caloriesBurnedLabel"
+            android:text="@string/CalBurnedLabel"
+            />
+        <TextView
+            android:id="@+id/caloriesBurnedTV"
+            android:text="@string/Calories"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/heightLabel"
+            android:text="@string/Height"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <LinearLayout android:orientation="horizontal"
+            android:weightSum="1">
+            <Spinner
+                android:id="@+id/feetSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50" />
+            <Spinner
+                android:id="@+id/inchesSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/BMILabel"
+            android:text="@string/BMI"
+            />
+        <TextView
+            android:id="@+id/bmiTV"
+            android:text="@string/bmi"
+            />
+    </TableRow>
+
+    <TableRow></TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/nameLabel"
+            android:text="@string/name"
+            />
+        <EditText
+            android:id="@+id/nameET"
+            />
+    </TableRow>
+
+</TableLayout>
