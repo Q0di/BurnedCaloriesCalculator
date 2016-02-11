@@ -21,6 +21,7 @@
     </style>
     <style name="FontSize">
         <item name="android:textSize">20dp</item>
+        <item name="android:padding">10dp</item>
     </style>
 
 </resources>
