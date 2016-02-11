@@ -38,7 +38,7 @@ public class BurnCaloriesCalculatorActivity extends AppCompatActivity implements
         //get refs to widgets
         weightET = (EditText) findViewById(R.id.weightET);
         milesTV = (TextView) findViewById(R.id.milesTV);
-        milesSeekBar = (SeekBar) findViewById(R.id.milesSeekbar);
+        milesSeekBar = (SeekBar) findViewById(R.id.milesSeekBar);
         caloriesBurnedTV = (TextView) findViewById(R.id.caloriesBurnedTV);
         feetSpinner = (Spinner) findViewById((R.id.feetSpinner));
         inchesSpinner = (Spinner) findViewById(R.id.inchesSpinner);
