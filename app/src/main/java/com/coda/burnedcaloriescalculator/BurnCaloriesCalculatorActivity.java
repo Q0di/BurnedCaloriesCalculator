@@ -54,7 +54,7 @@ public class BurnCaloriesCalculatorActivity extends AppCompatActivity implements
         milesSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                milesTV.setText(progress +"mi");
+                milesTV.setText(progress +" mi");
             }
 
             @Override

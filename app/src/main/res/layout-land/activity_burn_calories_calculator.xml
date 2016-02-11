@@ -46,7 +46,7 @@
             android:text="@string/CalBurnedLabel"
             />
         <TextView
-            android:id="@+id/caloriesBurnedTV"
+            android:id="@+id/caloriesBurnedLabel"
             android:text="@string/Calories"
             />
     </TableRow>
@@ -79,7 +79,7 @@
             android:text="@string/BMI"
             />
         <TextView
-            android:id="@+id/bmiTV"
+            android:id="@+id/bmilabel"
             android:text="@string/bmi"
             />
     </TableRow>
